@@ -1,0 +1,96 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background:rgb(199, 210, 220);
+}
+.wrapper{
+	width: 750px;
+	height: 650px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+}
+.navigation{
+	position:absolute;
+	bottom: 16px;
+	left: 50%;
+	transform: translatex(-50%);
+	display: flex;
+}
+.buttons{
+	width: 30px;
+	height: 8px;
+	cursor: pointer;
+	margin: 6px;
+	opacity: .7;
+	background-color: #ddd;
+	transition:all .4s ease;
+	border-radius: 10px;
+}
+.buttons:hover{
+	opacity:1;
+	transform: scale(1.1);
+}
+input[name = "me"]{
+	position: absolute;
+	visibility: hidden;
+}
+.slides{
+	width: 400%;
+	height: 90%;
+	display: flex;
+}
+.slide{
+	width: 25%;
+	transition:all .6s ease;
+}
+.slide img{
+	border-radius: 10px;
+	width: 100%;
+	height: 100%;
+}
+.text{
+	font-size: 25px;
+	margin-top: 15px;
+	width: 120px;
+	/* overflow: hidden; */
+}
+
+.description{
+	display: flex;
+	width: 400%;
+}
+.memes{
+	width: 25%;
+	transition:all .6s ease;
+}
+
+#master1:checked ~ .wbc{
+	margin-left: 0;
+}
+#master2:checked ~ .wbc{
+	margin-left: -25%;
+}
+#master3:checked ~ .wbc{
+	margin-left: -50%;
+}
+#master4:checked ~ .wbc{
+	margin-left: -75%;
+}
+
+#master1:checked ~ .mem{
+	margin-left: 0;
+}
+#master2:checked ~ .mem{
+	margin-left: -25%;
+}
+#master3:checked ~ .mem{
+	margin-left: -50%;
+}
+#master4:checked ~ .mem{
+	margin-left: -75%;
+}
