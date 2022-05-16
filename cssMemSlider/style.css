@@ -137,6 +137,31 @@ input[name = "me"]{
 }
 
 
-@media (min-width: 320px) and (max-width: 526px){
+@media (min-width: 320px) and (max-width: 540px){
+	.wrapper{
+		height:25em;
+		width: 20em;
+	}
+	.slides{
+		display: flex;
+		border-radius: 0.7em;
+		width: 400%;
+		height: 65%;
+		margin-left: 300%;
+	}
+}
 
+
+@media (min-width: 541px) and (max-width: 640px){
+	.wrapper{
+		height:30em;
+		width: 30em;
+	}
+	.slides{
+		display: flex;
+		border-radius: 0.7em;
+		width: 400%;
+		height: 78%;
+		margin-left: 300%;
+	}
 }
