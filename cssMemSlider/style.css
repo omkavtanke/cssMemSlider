@@ -1,0 +1,167 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background:rgb(199, 210, 220);
+}
+.wrapper{
+	height:35em;
+	width: 40em;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	overflow: hidden;
+}
+.navigation{
+	display: flex;
+	gap: 1.3em;
+	height: 2em;
+	align-items: center;
+}
+.buttons{
+	width: 1.8em;
+	height: 0.6em;
+	cursor: pointer;
+	margin:0.2em;
+	opacity: .3;
+	background-color: rgb(30, 30, 30);
+	border: 1.1em #ddd;
+	transition:all .4s ease;
+	border-radius: 0.7em;
+}
+input[name = "me"]{
+	visibility: hidden;
+}
+.slides{
+	display: flex;
+	border-radius: 0.7em;
+	width: 400%;
+	height: 80%;
+	margin-left: 300%;
+}
+.slide{
+	width: 25%;
+	transition:all .5s ease;
+}
+.slide img{
+	border-radius: 0.7em;
+	width: 100%;
+	height: 100%;
+}
+.text{
+	width: 140px;
+	overflow: hidden;
+	align-self: start;
+}
+.description{
+	font-size: 1.3rem;
+	display: flex;
+	width: 400%;
+}
+.memes {
+	width: 25%;
+	align-items: center;
+	display: flex;
+	transition:all .6s ease;
+}
+
+#master1:checked ~ .navigation > .button1{
+	transition: all 0.2s ease;
+	opacity: 1;
+	transform: scale(1.2);
+}
+#master2:checked ~  .navigation > .button2{
+	transition: all 0.2s ease;
+	opacity: 1;
+	transform: scale(1.2);
+}
+#master3:checked ~ .navigation > .button3{
+	transition: all 0.2s ease;
+	opacity: 1;
+	transform: scale(1.2);
+}
+#master4:checked ~ .navigation > .button4{
+	transition: all 0.2s ease;
+	opacity: 1;
+	transform: scale(1.2);
+}
+
+
+#master1:checked ~ .text > .description > .mem{
+	margin-left: 0;
+}
+#master2:checked ~ .text > .description > .mem{
+	margin-left: -25%;
+}
+#master3:checked ~ .text > .description > .mem{
+	margin-left: -50%;
+}
+#master4:checked ~ .text > .description > .mem{
+	margin-left: -75%;
+}
+
+ 
+#master1:checked ~ .slides > .wbc {
+	margin-left: 0;
+}
+#master2:checked ~ .slides > .wbc {
+	margin-left: -25%;
+}
+#master3:checked ~ .slides > .wbc{
+	margin-left: -50%;
+}
+#master4:checked ~ .slides > .wbc{
+	margin-left: -75%;
+} 
+.minitext{
+	font-size: 1em;
+	font-family: 'Arial' serif;
+	font-weight: 400;
+	text-align: center;
+
+}
+.click-area{
+	margin: -0.8em 0 0 -0.6em;
+	display: block;
+	width: 3.2rem;
+	height: 2.5rem;
+}
+.buttons:hover, .click-area:hover{
+	opacity:.7;
+	transform: scale(1.3);
+	cursor: pointer;
+	box-sizing: border-box;
+}
+
+
+@media (min-width: 320px) and (max-width: 540px){
+	.wrapper{
+		height:25em;
+		width: 20em;
+	}
+	.slides{
+		display: flex;
+		border-radius: 0.7em;
+		width: 400%;
+		height: 65%;
+		margin-left: 300%;
+	}
+}
+
+
+@media (min-width: 541px) and (max-width: 640px){
+	.wrapper{
+		height:30em;
+		width: 30em;
+	}
+	.slides{
+		display: flex;
+		border-radius: 0.7em;
+		width: 400%;
+		height: 78%;
+		margin-left: 300%;
+	}
+}
