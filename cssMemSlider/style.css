@@ -6,19 +6,16 @@ body{
 	background:rgb(199, 210, 220);
 }
 .wrapper{
-	width: 100vh;
-	height: 80vh;
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
+	height:35em;
+	width: 40em;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 	overflow: hidden;
 }
 .navigation{
-	position:absolute;
-	bottom: 0;
-	left: 50%;
-	transform: translatex(-50%);
 	display: flex;
 	gap: 1.3em;
 	height: 2em;
@@ -39,10 +36,11 @@ input[name = "me"]{
 	visibility: hidden;
 }
 .slides{
-	width: 400%;
-	height: 90%;
 	display: flex;
 	border-radius: 0.7em;
+	width: 400%;
+	height: 80%;
+	margin-left: 300%;
 }
 .slide{
 	width: 25%;
@@ -54,11 +52,12 @@ input[name = "me"]{
 	height: 100%;
 }
 .text{
-	width: 20%;
+	width: 140px;
 	overflow: hidden;
+	align-self: start;
 }
 .description{
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	display: flex;
 	width: 400%;
 }
@@ -72,18 +71,22 @@ input[name = "me"]{
 #master1:checked ~ .navigation > .button1{
 	transition: all 0.2s ease;
 	opacity: 1;
+	transform: scale(1.2);
 }
-#master2:checked ~ .navigation > .button2{
+#master2:checked ~  .navigation > .button2{
 	transition: all 0.2s ease;
 	opacity: 1;
+	transform: scale(1.2);
 }
 #master3:checked ~ .navigation > .button3{
 	transition: all 0.2s ease;
 	opacity: 1;
+	transform: scale(1.2);
 }
 #master4:checked ~ .navigation > .button4{
 	transition: all 0.2s ease;
 	opacity: 1;
+	transform: scale(1.2);
 }
 
 
@@ -114,7 +117,7 @@ input[name = "me"]{
 	margin-left: -75%;
 } 
 .minitext{
-	font-size: 2em;
+	font-size: 1em;
 	font-family: 'Arial' serif;
 	font-weight: 400;
 	text-align: center;
@@ -131,4 +134,9 @@ input[name = "me"]{
 	transform: scale(1.3);
 	cursor: pointer;
 	box-sizing: border-box;
+}
+
+
+@media (min-width: 320px) and (max-width: 526px){
+
 }
